@@ -1,0 +1,18 @@
+void drawFace(int faceX, int faceY) {
+  // draw a face
+  fill(#FFFF00);
+  ellipse(faceX, faceY, 200, 225);
+}
+
+void setup() {
+   size(400, 400);
+}
+
+int x;
+
+void draw() {
+  background(255);
+  drawFace(x, 200);
+  x += 1;
+
+}
