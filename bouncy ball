@@ -1,0 +1,30 @@
+int x;
+int xSpeed;
+int y;
+int ySpeed;
+// declare globally your variable.
+void setup() {
+  size(1000, 500);
+  x= 1000;
+  xSpeed = 1;
+//dont initialize yopur variables in a draw loop
+// initialize your loops outside the draw function.
+}
+void draw() {
+  x -= xSpeed;
+  background(#AF3B6E);
+  if (x >= 100) {
+    xSpeed += 2;
+  } else if (x <= 0) {
+    xSpeed = -xSpeed;
+  }
+  fill(#21FA90);
+  rect(100, 100, 50, 500);
+  noStroke();
+  //ball
+  fill(#090C9B);
+  ellipse(x, 290, 200, 200);
+  //barrier
+  fill(#FF0D4E);
+  rect(900, 100, 400, 500);
+}
