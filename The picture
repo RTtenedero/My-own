@@ -1,0 +1,19 @@
+PImage original;
+PImage SC2;
+
+void setup() { 
+size(900, 500);
+original = loadImage("tree.jpg");
+SC2 = loadImage("blast.jpg");
+
+}  
+void draw(){
+image(original, 0, 0, 900, 500);
+image(SC2, 100, 100, 200, 200);
+fill(#A4B7F6);
+rect(25, 20, 40, 60);
+fill (0, 102, 153);
+rect(25, 20, 40, 50);
+lerpColor(60, 50, 1.0);
+
+}
